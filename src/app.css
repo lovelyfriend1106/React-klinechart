@@ -3,30 +3,36 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 15px;
 }
 
 .app .k-line-chart-container {
   display: flex;
   flex-direction: column;
-  margin: 15px;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
-  background-color: #FFFFFF;
-  width: 620px;
-  height: 440px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  width: 100%;
+  height: 800px;
   padding: 16px 6px 16px 16px;
 }
 
 .app .k-line-chart-container .k-line-chart-title {
-  margin: 0;
-  color: #252525;
+  font-size: 32px;
   padding-bottom: 10px;
+  margin: 0;
 }
+[theme='light'] .app .k-line-chart-container .k-line-chart-title {
+  color: #252525;
+}
+[theme='dark'] .app .k-line-chart-container .k-line-chart-title {
+  color: #fff;
+}
+
 .app .k-line-chart-container .k-line-chart {
   display: flex;
   flex: 1;
 }
+
 .app .k-line-chart-container .k-line-chart-menu-container {
   display: flex;
   flex-direction: row;
@@ -36,9 +42,19 @@
   color: #606060;
 }
 
+.app .time {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.app .time button {
+  cursor: pointer;
+}
+
 .app .k-line-chart-container .k-line-chart-menu-container button {
   cursor: pointer;
-  background-color: #1677FF;
+  background-color: #1677ff;
   border-radius: 2px;
   margin-right: 8px;
   height: 24px;
